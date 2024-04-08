@@ -1,0 +1,119 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Version of quarto used for this site is 1.4.542.\n\n\n\n\n\n\nWarning\n\n\n\nThere is usually a version of quarto installed with RStudio. For example, on my machine this is /Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto. But, this is not the latest version. I leave the RStudio version alone, install a new version of quarto on my machine, independent to RStudio, and then render everything through the CLI.\n\n\n\n\nDetails on GitHub repository files, tags, commits follow:\n\nrepo &lt;- git2r::repository(path = \".\")\nsummary(repo)\n\nLocal:    main /Users/mark/Documents/reference/edu/brady_neal_2020_causal_inference/causal-inference\nRemote:   main @ origin (https://github.com/maj-biostat/causal-inference.git)\nHead:     [5d9986c] 2024-04-08: Add readme\n\nBranches:        2\nTags:            0\nCommits:         2\nContributors:    1\nStashes:         0\nIgnored files:   3\nUntracked files: 4\nUnstaged files:  0\nStaged files:    0\n\nLatest commits:\n[5d9986c] 2024-04-08: Add readme\n[9abe082] 2024-04-08: First commit",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "about.html#repository-status",
+    "href": "about.html#repository-status",
+    "title": "About",
+    "section": "",
+    "text": "Details on GitHub repository files, tags, commits follow:\n\nrepo &lt;- git2r::repository(path = \".\")\nsummary(repo)\n\nLocal:    main /Users/mark/Documents/reference/edu/brady_neal_2020_causal_inference/causal-inference\nRemote:   main @ origin (https://github.com/maj-biostat/causal-inference.git)\nHead:     [5d9986c] 2024-04-08: Add readme\n\nBranches:        2\nTags:            0\nCommits:         2\nContributors:    1\nStashes:         0\nIgnored files:   3\nUntracked files: 4\nUnstaged files:  0\nStaged files:    0\n\nLatest commits:\n[5d9986c] 2024-04-08: Add readme\n[9abe082] 2024-04-08: First commit",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "reading-group-paper-01.html",
+    "href": "reading-group-paper-01.html",
+    "title": "Paper 1: Does obesity shorten life?",
+    "section": "",
+    "text": "The doi for this paper is https://doi.org/10.1038/ijo.2008.82.",
+    "crumbs": [
+      "Reading group papers",
+      "Paper 1: Does obesity shorten life?"
+    ]
+  },
+  {
+    "objectID": "reading-group-paper-01.html#what-is-the-paper-about",
+    "href": "reading-group-paper-01.html#what-is-the-paper-about",
+    "title": "Paper 1: Does obesity shorten life?",
+    "section": "What is the paper about?",
+    "text": "What is the paper about?\nThe paper is a commentary on the application of the potential outcomes framework in the context of observational research. It takes the specific example of the reported effects of obesity on mortality and gives a narrative critique of the claims from the vantage point of causal inference.",
+    "crumbs": [
+      "Reading group papers",
+      "Paper 1: Does obesity shorten life?"
+    ]
+  },
+  {
+    "objectID": "reading-group-paper-01.html#what-does-the-author-want-us-to-know",
+    "href": "reading-group-paper-01.html#what-does-the-author-want-us-to-know",
+    "title": "Paper 1: Does obesity shorten life?",
+    "section": "What does the author want us to know?",
+    "text": "What does the author want us to know?\nThe authors want us to know what conditions are required to make causal claims. Specifically, they want us to understand:\n\nconsistency\nthe importance of how an intervention is specified\nexchangeability\npositivity",
+    "crumbs": [
+      "Reading group papers",
+      "Paper 1: Does obesity shorten life?"
+    ]
+  },
+  {
+    "objectID": "reading-group-paper-01.html#what-did-they-do",
+    "href": "reading-group-paper-01.html#what-did-they-do",
+    "title": "Paper 1: Does obesity shorten life?",
+    "section": "What did they do?",
+    "text": "What did they do?\nThe authors introduce the findings of observational obesity studies and then define the causal question that is being asked. They highlight consistency violations as the chief issue and explain how this leads to a cascade of problems that compromise the inference.\n\nA mind experiment\nThe paper starts with a mind experiment. Three randomised trials are run to estimate the effect of obesity on mortality. The end use is a policy directive that has the goal of reducing excess death attributable to obesity. The first study randomises a mandated exercise program as the intervention group, the second randomises a diet, the third randomises both. In all three studies, the control group is behaviour as usual.\nPredictably, there is variation in the results. In all, the distribution of BMI and mortality is lower in the intervention group. However, the mortality rate varies across the studies. The implication is that the effect of obesity is unknown, but to inform a policy decision, simply pick the study with the greatest reduction in mortality.\nAn observational study is now run using population-level data on BMI, death and risk factors on lifestyle and death. In this study, the effect of obesity on mortality is reported.\nThe authors raise the question of how it is possible that the observational study appears more suitable than the RCT in answering causal questions on the health effects of obesity.\n\n\nWhy the paradox?\nSimply, RCTs compare the distribution of the outcome under differing experimental conditions. Above, the experimental conditions were physical activity, diet or both relative to behaviour as usual. The effects are attributable to the intervention, not obesity. In contrast, an observational study allows you to compare the mortality rate based on the definition of obesity, e.g. \\(BMI \\gt 30\\) adjusted for relevant factors. Implicit in the observational result is the notion of some, likely multi-factorial and individual-specific, intervention that reduces weight to normal levels. And, as the Prince of Denmark said, there’s the rub.\n\n\n\n\n\n\nNote\n\n\n\n\n\nIf they are to provide a single estimate for the effect of obesity, the observational data analyst has to\n\nassume that all interventions on BMI have the same effect on mortality or\nconsider a complex intervention that changes the determinants of BMI in proportion to the distribution of those determinants in those who are not obese in the population\n\nBoth of these have problems; (1) is unlikely to be true (2) is unlikely to be feasible.\n\n\n\n\n\nFormalisation\nWe know that causal inference requires consistency, exchangeability and positivity.\nAs alluded to, the authors argue that consistency (the causal contrast involves two or more well-defined interventions1) is often neglected. In observational studies, we do not know how a unit reached a given state (e.g. what was the intervention that resulted in unit \\(i\\) achieving a BMI of \\(20\\)?). Therefore, we are left with a vague notion of what the causal contrast is.\nIn an RCT, we have exchangeability, which allows us to interpret the associational relationship between the intervention and outcome as a causal relationship. In an observational study, we rely on expert knowledge to identify and adjust for confounding in an attempt to approximate exchangeability, more specifically conditional exchangeability. When the definition of the intervention is vague, adjustment to achieve conditional exchangeability is complicated by virtue of the vast array of factors that culd influence both obesity and death.\nAssuming that conditional exchangeability can be achieved, we need representation within each strata in order to produce estimates of the treatment effect that do not resort to extrapolation, e.g. see doi.org/10.1214/13-AOAS630. Following on from above, a large adjustment space increases the likelihood of sparse data, which increases the risk of positivity violations.",
+    "crumbs": [
+      "Reading group papers",
+      "Paper 1: Does obesity shorten life?"
+    ]
+  },
+  {
+    "objectID": "reading-group-paper-01.html#what-did-they-conclude",
+    "href": "reading-group-paper-01.html#what-did-they-conclude",
+    "title": "Paper 1: Does obesity shorten life?",
+    "section": "What did they conclude?",
+    "text": "What did they conclude?\n\nThat you need to watch out for observational studies where the intervention is vaguely (if at all) defined because the causal effect may not be meaningful.\nYou cannot talk about or compute causal effects in absence of a well-defined intervention.\nExchangeability and positivity are both potentially impacted by vague intervention definitions.\nStatistics cannot fix problems with consistency.\nTo inform policy, it could make more sense to focus on modifiable lifestyle factors than on a particular characteristic such as BMI.",
+    "crumbs": [
+      "Reading group papers",
+      "Paper 1: Does obesity shorten life?"
+    ]
+  },
+  {
+    "objectID": "reading-group-paper-01.html#what-was-unclear",
+    "href": "reading-group-paper-01.html#what-was-unclear",
+    "title": "Paper 1: Does obesity shorten life?",
+    "section": "What was unclear?",
+    "text": "What was unclear?\nNothing, although discussion may bring some questions to light.",
+    "crumbs": [
+      "Reading group papers",
+      "Paper 1: Does obesity shorten life?"
+    ]
+  },
+  {
+    "objectID": "reading-group-paper-01.html#footnotes",
+    "href": "reading-group-paper-01.html#footnotes",
+    "title": "Paper 1: Does obesity shorten life?",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n\\(Y(a)\\) is consistent with the observed \\(Y\\) if \\(Y(a) = Y\\) when unit receives intervention \\(A=a\\).↩︎",
+    "crumbs": [
+      "Reading group papers",
+      "Paper 1: Does obesity shorten life?"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "causal-inference",
+    "section": "",
+    "text": "This is a collection of notes that relate to the lecture series on causal inference by Brady Neal. The lectures can be found on YouTube; a playlist can be found here. He also has a website to accompany the video material, which includes a free text book along with a recommended book-club-style reading list.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#reading-group-papers",
+    "href": "index.html#reading-group-papers",
+    "title": "causal-inference",
+    "section": "Reading group papers",
+    "text": "Reading group papers\n\nPaper 1: Does obesity shorten life? The importance of well-defined interventions to answer causal questions (Hernán & Taubman, 2008)",
+    "crumbs": [
+      "Home"
+    ]
+  }
+]
