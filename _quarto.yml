@@ -1,0 +1,38 @@
+project:
+  type: website
+
+website:
+  title: "causal-inference"
+  navbar:
+      tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://github.com/maj-biostat/roadmap-sim
+          - text: Report a Bug
+            url:  https://github.com/maj-biostat/roadmap-sim/issues
+
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - href: index.qmd
+        text: Home
+      - section: "Reading group papers"
+        contents:
+        - reading-group-paper-01.qmd
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    filters:
+      - at: pre-render
+        path: "etc//citeproc.lua"
+      - at: pre-render
+        path: "etc//wordcount.lua"
+
+
+

@@ -1,0 +1,32 @@
+---
+title: "About"
+date: today
+date-modified: last-modified
+author: Mark Jones
+---
+
+```{r, echo = FALSE}
+suppressPackageStartupMessages(library("git2r"))
+```
+
+# About {.unnumbered}
+
+Version of quarto used for this site is `r system("$(which quarto) --version", intern = TRUE, ignore.stderr = TRUE)`.
+
+::: callout-warning
+There is usually a version of quarto installed with RStudio.
+For example, on my machine this is `/Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto`.
+But, this is not the latest version.
+I leave the RStudio version alone, install a new version of quarto on my machine, independent to RStudio, and then render everything through the CLI.
+:::
+
+## Repository status {.unnumbered}
+
+Details on GitHub repository files, tags, commits follow:
+
+```{r}
+repo <- git2r::repository(path = ".")
+summary(repo)
+```
+
+

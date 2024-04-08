@@ -1,0 +1,15 @@
+---
+title: "causal-inference"
+date: today
+date-modified: last-modified
+author: Mark Jones
+---
+
+This is a collection of notes that relate to the lecture series on causal inference by Brady Neal.
+The lectures can be found on YouTube; a playlist can be found [here](https://www.youtube.com/playlist?list=PLoazKTcS0Rzb6bb9L508cyJ1z-U9iWkA0){target="_blank"}.
+He also has a [website](https://www.bradyneal.com/causal-inference-course){target="_blank"} to accompany the video material, which includes a free text book along with a recommended book-club-style reading list. 
+
+## Reading group papers
+
+
++ [Paper 1: Does obesity shorten life? The importance of well-defined interventions to answer causal questions (Hernán & Taubman, 2008)](reading-group-paper-01.qmd)
