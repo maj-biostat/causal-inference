@@ -8,9 +8,9 @@ website:
       - icon: github
         menu:
           - text: Source Code
-            url:  https://github.com/maj-biostat/roadmap-sim
+            url:  https://github.com/maj-biostat/causal-inference
           - text: Report a Bug
-            url:  https://github.com/maj-biostat/roadmap-sim/issues
+            url:  https://github.com/maj-biostat/causal-inference/issues
 
   sidebar:
     style: "docked"
