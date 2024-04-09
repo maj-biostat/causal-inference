@@ -21,6 +21,7 @@ website:
       - section: "Reading group papers"
         contents:
         - reading-group-paper-01.qmd
+        - reading-group-paper-02.qmd
       - about.qmd
 
 format:
