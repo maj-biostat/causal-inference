@@ -20,9 +20,9 @@ The paper is a commentary about non-manipulable factors such as race and how the
 ## What do the authors want us to know?
 
 There is a mantra in the potential outcomes literature *no causation without manipulation*.
-The author, Judea Pearl, reviews the problems associated with this perspective.
+The author of the paper, Judea Pearl, reviews the problems associated with this perspective.
 For example, we cannot manipulate race in real life but it is common knowledge that there are strong effects of race on numerous outcomes, from health to education to income.
-Pearl introduces the structural causal model framework where:
+Pearl introduces the structural causal model framework as an alternative perspective where:
 
 1. the concept of interventions do not require a real-life or physical counterpart and 
 2. the notion of consistency is not an assumption, but a theorem^[A statement that can be proved mathematically.] of counterfactual logic.
@@ -44,11 +44,11 @@ Specifically, the do-operator does not depend on any choice of intervention, it 
 Pearl goes into this in more depth to expand on this point, but I don't believe that add much to his argument.
 
 Next Pearl discusses the idea of scientific versus policy-based causation and does provide some analogies.
-One that I liked was his reference to the ideal gas law^[I have updated the symbols to align with standard exposition in Physics.] $PV = kNT$ that approximation of the behavior of many gases where $P$ is the absolute pressure of a gas, $V$ is the volume it occupies, $N$ is the number of atoms and molecules in the gas, and $T$ is its absolute temperature. 
+One that I liked was his reference to the ideal gas law^[I have updated the symbols to align with what are more commonly used in Physics text books.] $PV = kNT$ that approximation of the behavior of many gases where $P$ is the absolute pressure of a gas, $V$ is the volume it occupies, $N$ is the number of atoms and molecules in the gas, and $T$ is its absolute temperature. 
 The constant $k$ is called the Boltzmann constant and has the value $k = 1.38 × 10−23 J/K$.
 Thus whenever changes in pressure are always accompanied by changes in $V$, $N$ and/or $T$.
-These, like diet and exercise in the obesity example presented by Hernan, have side effects.
-Nevertheless, we do not think it necessary to discuss $V$, $N$ or $T$ when we are talking about how tyre pressure effects the likelihood of punctures on unsealed roads, or a bumpy ride in general.
+These, like both the diet and exercise interventions in Hernan's obesity example, have side effects.
+However, we generally do not consider it necessary to talk about $V$, $N$ or $T$ when we are talking about e.g. how tyre pressure effects the likelihood of punctures on unsealed roads, or a bumpy ride in general.
 
 Pearl caveats the hard versus soft science perspectives, but the alternative perspective is welcome in stressing the need to avoid locking ourselves into pigeon holes.
 
@@ -60,15 +60,14 @@ His position is that both the effect of interventions and the health consequence
 ## What was unclear?
 
 Pearl's writing can be technical, nuanced and philosophically dense.
-This paper is no exception and therefore some of important points may have been missed in this summary.
+This paper is no exception and therefore I may have missed some important points or subtleties in this summary.
+For example, what Pearl means by *causal character* is unclear to me.
 
-The subtleties of some of the language are difficult. 
-For example, what Pearl means by *causal character* is unclear.
-
-Some of the critique on consistency as an assumption versus consistency as a theorem was unclear due to insufficient familiarity with alternative frameworks for conceptualising causal inference.
+Some of the critique on consistency as an assumption versus consistency as a theorem was unclear due to my own ignorance with alternative causal inference, specifically Pearl's approach.
 
 Pearls argument rests primarily on the validity of his conceptualisation of causal inference, which is founded on a large body of work drawing from philosophy, science, mathematics and statistics.
-However, I am not sure that it provides a clear way forward and the applied researcher is left to choose which approach to adopt.
+I am not sure that it provides a clear way forward and the applied researcher is left to choose which approach to adopt with limited guidance.
+While providing such guidance wasn't the point of the paper, it feels like it raises more questions than it resolves.
 
 
 
