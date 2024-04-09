@@ -1,0 +1,75 @@
+---
+title: "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?"
+date: today
+date-modified: last-modified
+author: Mark Jones
+wordcount-html:
+    toc: true
+    fig-align: center
+    cap-location: margin
+---
+
+
+The doi for this paper is [https://doi.org/10.1515/jci-2018-2001](https://doi.org/10.1515/jci-2018-2001).
+
+
+## What is the paper about?
+
+The paper is a commentary about non-manipulable factors such as race and how they do not play nicely with the experimentalist view of causation.
+
+## What do the authors want us to know?
+
+There is a mantra in the potential outcomes literature *no causation without manipulation*.
+The author, Judea Pearl, reviews the problems associated with this perspective.
+For example, we cannot manipulate race in real life but it is common knowledge that there are strong effects of race on numerous outcomes, from health to education to income.
+Pearl introduces the structural causal model framework where:
+
+1. the concept of interventions do not require a real-life or physical counterpart and 
+2. the notion of consistency is not an assumption, but a theorem^[A statement that can be proved mathematically.] of counterfactual logic.
+
+Instead, variables are causal (or have a causal character) because they respond to changes in other variables 
+
+## What did they do?
+
+The author challenges the [Hernan's](reading-group-paper-01.qmd) position that to talk about the causal effects of obesity is meaningless since a vaguely defined intervention can lead to violations of the consistency assumption.
+
+Pearl first takes umbrage with the way that Hernan presents BMI as the marker for obesity and makes it clear that obesity is should be described with reference to many factors^[This seems odd given that obesity does have a definition that is based purely on BMI and that is used routinely by clinicians.].
+
+Next, Pearl raises what he argues is a limitation in the Rubin model whereby counterfactuals may appear inconsistent when the antecedents are conflated with the external intervention devised to enfore the antecedent^[Admittedly I did not understand where Pearl was going with this. However, in [On the consistency rule in causal inference: axiom, definition, assumption, or theorem?](https://doi.org/10.1097/ede.0b013e3181f5d3fd) Pearl expands on this point.].
+
+Pearl then explans the do-operator (he developed the idea) and that it was intended to denote the operation of holding a variable constant.
+He argues that when Hernan claim that $P(mortality = y | do(obesity = x))$ is undefined because the consequences of obesity depend on how we choose to manipulate it, they missunderstand what the do-operator is intended to represent.
+Specifically, the do-operator does not depend on any choice of intervention, it is defined relative to a **hypothetical, minimal intervention** needed to establish $X = x$, i.e. it is defined independently to how the event came about.
+
+Pearl goes into this in more depth to expand on this point, but I don't believe that add much to his argument.
+
+Next Pearl discusses the idea of scientific versus policy-based causation and does provide some analogies.
+One that I liked was his reference to the ideal gas law^[I have updated the symbols to align with standard exposition in Physics.] $PV = kNT$ that approximation of the behavior of many gases where $P$ is the absolute pressure of a gas, $V$ is the volume it occupies, $N$ is the number of atoms and molecules in the gas, and $T$ is its absolute temperature. 
+The constant $k$ is called the Boltzmann constant and has the value $k = 1.38 × 10−23 J/K$.
+Thus whenever changes in pressure are always accompanied by changes in $V$, $N$ and/or $T$.
+These, like diet and exercise in the obesity example presented by Hernan, have side effects.
+Nevertheless, we do not think it necessary to discuss $V$, $N$ or $T$ when we are talking about how tyre pressure effects the likelihood of punctures on unsealed roads, or a bumpy ride in general.
+
+Pearl caveats the hard versus soft science perspectives, but the alternative perspective is welcome in stressing the need to avoid locking ourselves into pigeon holes.
+
+## What did they conclude?
+
+Primarily that applied science requires both scientific and clinical knowledge to communicate knowledge.
+His position is that both the effect of interventions and the health consequences of obesity are both important and both meaningful and are legitimate targets of scientific pursuit.
+
+## What was unclear?
+
+Pearl's writing can be technical, nuanced and philosophically dense.
+This paper is no exception and therefore some of important points may have been missed in this summary.
+
+The subtleties of some of the language are difficult. 
+For example, what Pearl means by *causal character* is unclear.
+
+Some of the critique on consistency as an assumption versus consistency as a theorem was unclear due to insufficient familiarity with alternative frameworks for conceptualising causal inference.
+
+Pearls argument rests primarily on the validity of his conceptualisation of causal inference, which is founded on a large body of work drawing from philosophy, science, mathematics and statistics.
+However, I am not sure that it provides a clear way forward and the applied researcher is left to choose which approach to adopt.
+
+
+
+
