@@ -9,7 +9,7 @@
 <meta name="author" content="Mark Jones">
 <meta name="dcterms.date" content="2024-04-09">
 
-<title>causal-inference - About</title>
+<title>causal-inference - Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -103,6 +69,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -143,7 +138,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./about.html">About</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./reading-group-paper-01.html">Reading group papers</a></li><li class="breadcrumb-item"><a href="./reading-group-paper-02.html">Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -186,7 +181,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./reading-group-paper-02.html" class="sidebar-item-text sidebar-link">
+  <a href="./reading-group-paper-02.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?</span></a>
   </div>
 </li>
@@ -194,7 +189,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./about.html" class="sidebar-item-text sidebar-link active">
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">About</span></a>
   </div>
 </li>
@@ -208,19 +203,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#about" id="toc-about" class="nav-link active" data-scroll-target="#about">About</a>
-  <ul class="collapse">
-  <li><a href="#repository-status" id="toc-repository-status" class="nav-link" data-scroll-target="#repository-status">Repository status</a></li>
-  </ul></li>
+  <li><a href="#what-is-the-paper-about" id="toc-what-is-the-paper-about" class="nav-link active" data-scroll-target="#what-is-the-paper-about">What is the paper about?</a></li>
+  <li><a href="#what-do-the-authors-want-us-to-know" id="toc-what-do-the-authors-want-us-to-know" class="nav-link" data-scroll-target="#what-do-the-authors-want-us-to-know">What do the authors want us to know?</a></li>
+  <li><a href="#what-did-they-do" id="toc-what-did-they-do" class="nav-link" data-scroll-target="#what-did-they-do">What did they do?</a></li>
+  <li><a href="#what-did-they-conclude" id="toc-what-did-they-conclude" class="nav-link" data-scroll-target="#what-did-they-conclude">What did they conclude?</a></li>
+  <li><a href="#what-was-unclear" id="toc-what-was-unclear" class="nav-link" data-scroll-target="#what-was-unclear">What was unclear?</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./reading-group-paper-01.html">Reading group papers</a></li><li class="breadcrumb-item"><a href="./reading-group-paper-02.html">Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?</h1>
 </div>
 
 
@@ -244,7 +240,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">April 8, 2024</p>
+      <p class="date-modified">April 9, 2024</p>
     </div>
   </div>
     
@@ -255,57 +251,53 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="about" class="level1 unnumbered">
-<h1 class="unnumbered">About</h1>
-<p>Version of quarto used for this site is 1.4.542.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Warning
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>There is usually a version of quarto installed with RStudio. For example, on my machine this is <code>/Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto</code>. But, this is not the latest version. I leave the RStudio version alone, install a new version of quarto on my machine, independent to RStudio, and then render everything through the CLI.</p>
-</div>
-</div>
-<section id="repository-status" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="repository-status">Repository status</h2>
-<p>Details on GitHub repository files, tags, commits follow:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>repo <span class="ot">&lt;-</span> git2r<span class="sc">::</span><span class="fu">repository</span>(<span class="at">path =</span> <span class="st">"."</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(repo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Local:    main /Users/mark/Documents/reference/edu/brady_neal_2020_causal_inference/causal-inference
-Remote:   main @ origin (https://github.com/maj-biostat/causal-inference.git)
-Head:     [b84a2ca] 2024-04-09: Minor edit
-
-Branches:        2
-Tags:            0
-Commits:         6
-Contributors:    1
-Stashes:         0
-Ignored files:   2
-Untracked files: 8
-Unstaged files:  0
-Staged files:    0
-
-Latest commits:
-[b84a2ca] 2024-04-09: Minor edit
-[6ea0b8b] 2024-04-09: Add new paper summary
-[149b4ee] 2024-04-09: Add next paper summary
-[61351dc] 2024-04-08: Minor edits
-[5d9986c] 2024-04-08: Add readme</code></pre>
-</div>
-</div>
+<p>The doi for this paper is <a href="https://doi.org/10.1515/jci-2018-2001">https://doi.org/10.1515/jci-2018-2001</a>.</p>
+<section id="what-is-the-paper-about" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-the-paper-about">What is the paper about?</h2>
+<p>The paper is a commentary about non-manipulable factors such as race and how they do not play nicely with the experimentalist view of causation.</p>
+</section>
+<section id="what-do-the-authors-want-us-to-know" class="level2">
+<h2 class="anchored" data-anchor-id="what-do-the-authors-want-us-to-know">What do the authors want us to know?</h2>
+<p>There is a mantra in the potential outcomes literature <em>no causation without manipulation</em>. The author of the paper, Judea Pearl, reviews the problems associated with this perspective. For example, we cannot manipulate race in real life but it is common knowledge that there are strong effects of race on numerous outcomes, from health to education to income. Pearl introduces the structural causal model framework as an alternative perspective where:</p>
+<ol type="1">
+<li>the concept of interventions do not require a real-life or physical counterpart and</li>
+<li>the notion of consistency is not an assumption, but a theorem<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> of counterfactual logic.</li>
+</ol>
+<p>Instead, variables are causal (or have a causal character) because they respond to changes in other variables</p>
+</section>
+<section id="what-did-they-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-did-they-do">What did they do?</h2>
+<p>The author challenges the <a href="./reading-group-paper-01.html">Hernan’s</a> position that to talk about the causal effects of obesity is meaningless since a vaguely defined intervention can lead to violations of the consistency assumption.</p>
+<p>Pearl first takes umbrage with the way that Hernan presents BMI as the marker for obesity and makes it clear that obesity is should be described with reference to many factors<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
+<p>Next, Pearl raises what he argues is a limitation in the Rubin model whereby counterfactuals may appear inconsistent when the antecedents are conflated with the external intervention devised to enfore the antecedent<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+<p>Pearl then explans the do-operator (he developed the idea) and that it was intended to denote the operation of holding a variable constant. He argues that when Hernan claim that <span class="math inline">\(P(mortality = y | do(obesity = x))\)</span> is undefined because the consequences of obesity depend on how we choose to manipulate it, they missunderstand what the do-operator is intended to represent. Specifically, the do-operator does not depend on any choice of intervention, it is defined relative to a <strong>hypothetical, minimal intervention</strong> needed to establish <span class="math inline">\(X = x\)</span>, i.e.&nbsp;it is defined independently to how the event came about.</p>
+<p>Pearl goes into this in more depth to expand on this point, but I don’t believe that add much to his argument.</p>
+<p>Next Pearl discusses the idea of scientific versus policy-based causation and does provide some analogies. One that I liked was his reference to the ideal gas law<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> <span class="math inline">\(PV = kNT\)</span> that approximation of the behavior of many gases where <span class="math inline">\(P\)</span> is the absolute pressure of a gas, <span class="math inline">\(V\)</span> is the volume it occupies, <span class="math inline">\(N\)</span> is the number of atoms and molecules in the gas, and <span class="math inline">\(T\)</span> is its absolute temperature. The constant <span class="math inline">\(k\)</span> is called the Boltzmann constant and has the value <span class="math inline">\(k = 1.38 × 10−23 J/K\)</span>. Thus whenever changes in pressure are always accompanied by changes in <span class="math inline">\(V\)</span>, <span class="math inline">\(N\)</span> and/or <span class="math inline">\(T\)</span>. These, like both the diet and exercise interventions in Hernan’s obesity example, have side effects. However, we generally do not consider it necessary to talk about <span class="math inline">\(V\)</span>, <span class="math inline">\(N\)</span> or <span class="math inline">\(T\)</span> when we are talking about e.g.&nbsp;how tyre pressure effects the likelihood of punctures on unsealed roads, or a bumpy ride in general.</p>
+<p>Pearl caveats the hard versus soft science perspectives, but the alternative perspective is welcome in stressing the need to avoid locking ourselves into pigeon holes.</p>
+</section>
+<section id="what-did-they-conclude" class="level2">
+<h2 class="anchored" data-anchor-id="what-did-they-conclude">What did they conclude?</h2>
+<p>Primarily that applied science requires both scientific and clinical knowledge to communicate knowledge. His position is that both the effect of interventions and the health consequences of obesity are both important and both meaningful and are legitimate targets of scientific pursuit.</p>
+</section>
+<section id="what-was-unclear" class="level2">
+<h2 class="anchored" data-anchor-id="what-was-unclear">What was unclear?</h2>
+<p>Pearl’s writing can be technical, nuanced and philosophically dense. This paper is no exception and therefore I may have missed some important points or subtleties in this summary. For example, what Pearl means by <em>causal character</em> is unclear to me.</p>
+<p>Some of the critique on consistency as an assumption versus consistency as a theorem was unclear due to my own ignorance with alternative causal inference, specifically Pearl’s approach.</p>
+<p>Pearls argument rests primarily on the validity of his conceptualisation of causal inference, which is founded on a large body of work drawing from philosophy, science, mathematics and statistics. I am not sure that it provides a clear way forward and the applied researcher is left to choose which approach to adopt with limited guidance. While providing such guidance wasn’t the point of the paper, it feels like it raises more questions than it resolves.</p>
 
 
 </section>
-</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>A statement that can be proved mathematically.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>This seems odd given that obesity does have a definition that is based purely on BMI and that is used routinely by clinicians.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Admittedly I did not understand where Pearl was going with this. However, in <a href="https://doi.org/10.1097/ede.0b013e3181f5d3fd">On the consistency rule in causal inference: axiom, definition, assumption, or theorem?</a> Pearl expands on this point.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>I have updated the symbols to align with what are more commonly used in Physics text books.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

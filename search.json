@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Version of quarto used for this site is 1.4.542.\n\n\n\n\n\n\nWarning\n\n\n\nThere is usually a version of quarto installed with RStudio. For example, on my machine this is /Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto. But, this is not the latest version. I leave the RStudio version alone, install a new version of quarto on my machine, independent to RStudio, and then render everything through the CLI.\n\n\n\n\nDetails on GitHub repository files, tags, commits follow:\n\nrepo &lt;- git2r::repository(path = \".\")\nsummary(repo)\n\nLocal:    main /Users/mark/Documents/reference/edu/brady_neal_2020_causal_inference/causal-inference\nRemote:   main @ origin (https://github.com/maj-biostat/causal-inference.git)\nHead:     [61351dc] 2024-04-08: Minor edits\n\nBranches:        2\nTags:            0\nCommits:         3\nContributors:    1\nStashes:         0\nIgnored files:   2\nUntracked files: 5\nUnstaged files:  0\nStaged files:    0\n\nLatest commits:\n[61351dc] 2024-04-08: Minor edits\n[5d9986c] 2024-04-08: Add readme\n[9abe082] 2024-04-08: First commit",
+    "text": "Version of quarto used for this site is 1.4.542.\n\n\n\n\n\n\nWarning\n\n\n\nThere is usually a version of quarto installed with RStudio. For example, on my machine this is /Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto. But, this is not the latest version. I leave the RStudio version alone, install a new version of quarto on my machine, independent to RStudio, and then render everything through the CLI.\n\n\n\n\nDetails on GitHub repository files, tags, commits follow:\n\nrepo &lt;- git2r::repository(path = \".\")\nsummary(repo)\n\nLocal:    main /Users/mark/Documents/reference/edu/brady_neal_2020_causal_inference/causal-inference\nRemote:   main @ origin (https://github.com/maj-biostat/causal-inference.git)\nHead:     [b84a2ca] 2024-04-09: Minor edit\n\nBranches:        2\nTags:            0\nCommits:         6\nContributors:    1\nStashes:         0\nIgnored files:   2\nUntracked files: 8\nUnstaged files:  0\nStaged files:    0\n\nLatest commits:\n[b84a2ca] 2024-04-09: Minor edit\n[6ea0b8b] 2024-04-09: Add new paper summary\n[149b4ee] 2024-04-09: Add next paper summary\n[61351dc] 2024-04-08: Minor edits\n[5d9986c] 2024-04-08: Add readme",
     "crumbs": [
       "About"
     ]
@@ -14,9 +14,29 @@
     "href": "about.html#repository-status",
     "title": "About",
     "section": "",
-    "text": "Details on GitHub repository files, tags, commits follow:\n\nrepo &lt;- git2r::repository(path = \".\")\nsummary(repo)\n\nLocal:    main /Users/mark/Documents/reference/edu/brady_neal_2020_causal_inference/causal-inference\nRemote:   main @ origin (https://github.com/maj-biostat/causal-inference.git)\nHead:     [61351dc] 2024-04-08: Minor edits\n\nBranches:        2\nTags:            0\nCommits:         3\nContributors:    1\nStashes:         0\nIgnored files:   2\nUntracked files: 5\nUnstaged files:  0\nStaged files:    0\n\nLatest commits:\n[61351dc] 2024-04-08: Minor edits\n[5d9986c] 2024-04-08: Add readme\n[9abe082] 2024-04-08: First commit",
+    "text": "Details on GitHub repository files, tags, commits follow:\n\nrepo &lt;- git2r::repository(path = \".\")\nsummary(repo)\n\nLocal:    main /Users/mark/Documents/reference/edu/brady_neal_2020_causal_inference/causal-inference\nRemote:   main @ origin (https://github.com/maj-biostat/causal-inference.git)\nHead:     [b84a2ca] 2024-04-09: Minor edit\n\nBranches:        2\nTags:            0\nCommits:         6\nContributors:    1\nStashes:         0\nIgnored files:   2\nUntracked files: 8\nUnstaged files:  0\nStaged files:    0\n\nLatest commits:\n[b84a2ca] 2024-04-09: Minor edit\n[6ea0b8b] 2024-04-09: Add new paper summary\n[149b4ee] 2024-04-09: Add next paper summary\n[61351dc] 2024-04-08: Minor edits\n[5d9986c] 2024-04-08: Add readme",
     "crumbs": [
       "About"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "causal-inference",
+    "section": "",
+    "text": "This is a collection of notes that relate to the lecture series on causal inference by Brady Neal. The lectures can be found on YouTube – a playlist can be found here. Brady also has a website to accompany the video material, which includes a free text book along with a recommended book-club-style reading list.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#reading-group-papers",
+    "href": "index.html#reading-group-papers",
+    "title": "causal-inference",
+    "section": "Reading group papers",
+    "text": "Reading group papers\n\nPaper 1: Does obesity shorten life? The importance of well-defined interventions to answer causal questions (Hernán & Taubman, 2008)\nPaper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes? (Pearl, 2018)",
+    "crumbs": [
+      "Home"
     ]
   },
   {
@@ -97,23 +117,80 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "causal-inference",
+    "objectID": "reading-group-paper-02.html",
+    "href": "reading-group-paper-02.html",
+    "title": "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?",
     "section": "",
-    "text": "This is a collection of notes that relate to the lecture series on causal inference by Brady Neal. The lectures can be found on YouTube – a playlist can be found here. Brady also has a website to accompany the video material, which includes a free text book along with a recommended book-club-style reading list.",
+    "text": "The doi for this paper is https://doi.org/10.1515/jci-2018-2001.",
     "crumbs": [
-      "Home"
+      "Reading group papers",
+      "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?"
     ]
   },
   {
-    "objectID": "index.html#reading-group-papers",
-    "href": "index.html#reading-group-papers",
-    "title": "causal-inference",
-    "section": "Reading group papers",
-    "text": "Reading group papers\n\nPaper 1: Does obesity shorten life? The importance of well-defined interventions to answer causal questions (Hernán & Taubman, 2008)",
+    "objectID": "reading-group-paper-02.html#what-is-the-paper-about",
+    "href": "reading-group-paper-02.html#what-is-the-paper-about",
+    "title": "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?",
+    "section": "What is the paper about?",
+    "text": "What is the paper about?\nThe paper is a commentary about non-manipulable factors such as race and how they do not play nicely with the experimentalist view of causation.",
     "crumbs": [
-      "Home"
+      "Reading group papers",
+      "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?"
+    ]
+  },
+  {
+    "objectID": "reading-group-paper-02.html#what-do-the-authors-want-us-to-know",
+    "href": "reading-group-paper-02.html#what-do-the-authors-want-us-to-know",
+    "title": "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?",
+    "section": "What do the authors want us to know?",
+    "text": "What do the authors want us to know?\nThere is a mantra in the potential outcomes literature no causation without manipulation. The author of the paper, Judea Pearl, reviews the problems associated with this perspective. For example, we cannot manipulate race in real life but it is common knowledge that there are strong effects of race on numerous outcomes, from health to education to income. Pearl introduces the structural causal model framework as an alternative perspective where:\n\nthe concept of interventions do not require a real-life or physical counterpart and\nthe notion of consistency is not an assumption, but a theorem1 of counterfactual logic.\n\nInstead, variables are causal (or have a causal character) because they respond to changes in other variables",
+    "crumbs": [
+      "Reading group papers",
+      "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?"
+    ]
+  },
+  {
+    "objectID": "reading-group-paper-02.html#what-did-they-do",
+    "href": "reading-group-paper-02.html#what-did-they-do",
+    "title": "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?",
+    "section": "What did they do?",
+    "text": "What did they do?\nThe author challenges the Hernan’s position that to talk about the causal effects of obesity is meaningless since a vaguely defined intervention can lead to violations of the consistency assumption.\nPearl first takes umbrage with the way that Hernan presents BMI as the marker for obesity and makes it clear that obesity is should be described with reference to many factors2.\nNext, Pearl raises what he argues is a limitation in the Rubin model whereby counterfactuals may appear inconsistent when the antecedents are conflated with the external intervention devised to enfore the antecedent3.\nPearl then explans the do-operator (he developed the idea) and that it was intended to denote the operation of holding a variable constant. He argues that when Hernan claim that \\(P(mortality = y | do(obesity = x))\\) is undefined because the consequences of obesity depend on how we choose to manipulate it, they missunderstand what the do-operator is intended to represent. Specifically, the do-operator does not depend on any choice of intervention, it is defined relative to a hypothetical, minimal intervention needed to establish \\(X = x\\), i.e. it is defined independently to how the event came about.\nPearl goes into this in more depth to expand on this point, but I don’t believe that add much to his argument.\nNext Pearl discusses the idea of scientific versus policy-based causation and does provide some analogies. One that I liked was his reference to the ideal gas law4 \\(PV = kNT\\) that approximation of the behavior of many gases where \\(P\\) is the absolute pressure of a gas, \\(V\\) is the volume it occupies, \\(N\\) is the number of atoms and molecules in the gas, and \\(T\\) is its absolute temperature. The constant \\(k\\) is called the Boltzmann constant and has the value \\(k = 1.38 × 10−23 J/K\\). Thus whenever changes in pressure are always accompanied by changes in \\(V\\), \\(N\\) and/or \\(T\\). These, like both the diet and exercise interventions in Hernan’s obesity example, have side effects. However, we generally do not consider it necessary to talk about \\(V\\), \\(N\\) or \\(T\\) when we are talking about e.g. how tyre pressure effects the likelihood of punctures on unsealed roads, or a bumpy ride in general.\nPearl caveats the hard versus soft science perspectives, but the alternative perspective is welcome in stressing the need to avoid locking ourselves into pigeon holes.",
+    "crumbs": [
+      "Reading group papers",
+      "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?"
+    ]
+  },
+  {
+    "objectID": "reading-group-paper-02.html#what-did-they-conclude",
+    "href": "reading-group-paper-02.html#what-did-they-conclude",
+    "title": "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?",
+    "section": "What did they conclude?",
+    "text": "What did they conclude?\nPrimarily that applied science requires both scientific and clinical knowledge to communicate knowledge. His position is that both the effect of interventions and the health consequences of obesity are both important and both meaningful and are legitimate targets of scientific pursuit.",
+    "crumbs": [
+      "Reading group papers",
+      "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?"
+    ]
+  },
+  {
+    "objectID": "reading-group-paper-02.html#what-was-unclear",
+    "href": "reading-group-paper-02.html#what-was-unclear",
+    "title": "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?",
+    "section": "What was unclear?",
+    "text": "What was unclear?\nPearl’s writing can be technical, nuanced and philosophically dense. This paper is no exception and therefore I may have missed some important points or subtleties in this summary. For example, what Pearl means by causal character is unclear to me.\nSome of the critique on consistency as an assumption versus consistency as a theorem was unclear due to my own ignorance with alternative causal inference, specifically Pearl’s approach.\nPearls argument rests primarily on the validity of his conceptualisation of causal inference, which is founded on a large body of work drawing from philosophy, science, mathematics and statistics. I am not sure that it provides a clear way forward and the applied researcher is left to choose which approach to adopt with limited guidance. While providing such guidance wasn’t the point of the paper, it feels like it raises more questions than it resolves.",
+    "crumbs": [
+      "Reading group papers",
+      "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?"
+    ]
+  },
+  {
+    "objectID": "reading-group-paper-02.html#footnotes",
+    "href": "reading-group-paper-02.html#footnotes",
+    "title": "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nA statement that can be proved mathematically.↩︎\nThis seems odd given that obesity does have a definition that is based purely on BMI and that is used routinely by clinicians.↩︎\nAdmittedly I did not understand where Pearl was going with this. However, in On the consistency rule in causal inference: axiom, definition, assumption, or theorem? Pearl expands on this point.↩︎\nI have updated the symbols to align with what are more commonly used in Physics text books.↩︎",
+    "crumbs": [
+      "Reading group papers",
+      "Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?"
     ]
   }
 ]
