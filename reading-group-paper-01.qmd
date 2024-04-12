@@ -100,5 +100,5 @@ Following on from above, a large adjustment space increases the likelihood of sp
 
 Nothing, although discussion may bring some questions to light.
 
-The authors do not give any mention to other causal inference frameworks and how these may have a different perspective on this topic.
+The authors do not give any mention to other causal inference frameworks and how these may have differing perspectives on the authors claims.
 
