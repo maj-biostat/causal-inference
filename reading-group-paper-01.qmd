@@ -16,7 +16,7 @@ The doi for this paper is [https://doi.org/10.1038/ijo.2008.82](https://doi.org/
 ## What is the paper about?
 
 The paper is a commentary on the application of the potential outcomes framework in the context of observational research.
-It takes the specific example of the reported effects of obesity on mortality and gives a narrative critique of the claims from the vantage point of causal inference.
+It takes the specific example (mind experiment) of the reported effects of obesity on mortality and gives a narrative critique of the claims from the vantage point of causal inference.
 
 ## What do the authors want us to know?
 
@@ -99,4 +99,6 @@ Following on from above, a large adjustment space increases the likelihood of sp
 ## What was unclear?
 
 Nothing, although discussion may bring some questions to light.
+
+The authors do not give any mention to other causal inference frameworks and how these may have a different perspective on this topic.
 
