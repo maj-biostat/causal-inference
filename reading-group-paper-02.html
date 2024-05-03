@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mark Jones">
-<meta name="dcterms.date" content="2024-04-12">
+<meta name="dcterms.date" content="2024-05-03">
 
 <title>causal-inference - Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes?</title>
 <style>
@@ -233,14 +233,14 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 12, 2024</p>
+      <p class="date">May 3, 2024</p>
     </div>
   </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">April 9, 2024</p>
+      <p class="date-modified">May 3, 2024</p>
     </div>
   </div>
     
@@ -267,21 +267,22 @@ window.Quarto = {
 </section>
 <section id="what-did-they-do" class="level2">
 <h2 class="anchored" data-anchor-id="what-did-they-do">What did they do?</h2>
-<p>The author challenges the <a href="./reading-group-paper-01.html">Hernan’s</a> position that to talk about the causal effects of obesity is meaningless since a vaguely defined intervention can lead to violations of the consistency assumption.</p>
+<p>The author challenges <a href="./reading-group-paper-01.html">Hernan’s</a> position that to talk about the causal effects of obesity is meaningless since a vaguely defined intervention can lead to violations of the consistency assumption.</p>
 <p>Pearl first takes umbrage with the way that Hernan presents BMI as the marker for obesity and makes it clear that obesity is should be described with reference to many factors<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.</p>
-<p>Next, Pearl raises what he argues is a limitation in the Rubin model whereby counterfactuals may appear inconsistent when the antecedents are conflated with the external intervention devised to enfore the antecedent<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+<p>Next, Pearl raises what he argues is a limitation in the Rubin model whereby counterfactuals may appear inconsistent when the antecedents<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> are conflated with the external intervention devised to enfore the antecedent<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
 <p>Pearl then explans the do-operator (he developed the idea) and that it was intended to denote the operation of holding a variable constant. He argues that when Hernan claim that <span class="math inline">\(P(mortality = y | do(obesity = x))\)</span> is undefined because the consequences of obesity depend on how we choose to manipulate it, they missunderstand what the do-operator is intended to represent. Specifically, the do-operator does not depend on any choice of intervention, it is defined relative to a <strong>hypothetical, minimal intervention</strong> needed to establish <span class="math inline">\(X = x\)</span>, i.e.&nbsp;it is defined independently to how the event came about.</p>
-<p>Pearl goes into this in more depth to expand on this point, but I don’t believe that add much to his argument.</p>
-<p>Next Pearl discusses the idea of scientific versus policy-based causation and does provide some analogies. One that I liked was his reference to the ideal gas law<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> <span class="math inline">\(PV = kNT\)</span> that approximation of the behavior of many gases where <span class="math inline">\(P\)</span> is the absolute pressure of a gas, <span class="math inline">\(V\)</span> is the volume it occupies, <span class="math inline">\(N\)</span> is the number of atoms and molecules in the gas, and <span class="math inline">\(T\)</span> is its absolute temperature. The constant <span class="math inline">\(k\)</span> is called the Boltzmann constant and has the value <span class="math inline">\(k = 1.38 × 10−23 J/K\)</span>. Thus whenever changes in pressure are always accompanied by changes in <span class="math inline">\(V\)</span>, <span class="math inline">\(N\)</span> and/or <span class="math inline">\(T\)</span>. These, like both the diet and exercise interventions in Hernan’s obesity example, have side effects. However, we generally do not consider it necessary to talk about <span class="math inline">\(V\)</span>, <span class="math inline">\(N\)</span> or <span class="math inline">\(T\)</span> when we are talking about e.g.&nbsp;how tyre pressure effects the likelihood of punctures on unsealed roads, or a bumpy ride in general.</p>
-<p>Pearl caveats the hard versus soft science perspectives, but the alternative perspective is welcome in stressing the need to avoid locking ourselves into pigeon holes.</p>
+<p>Pearl goes into this in more depth to expand on this point, but I didn’t see that he added much to his original argument other than to iterate some parts.</p>
+<p>Next Pearl discusses the idea of scientific versus policy-based causation and does provide some analogies. One that I liked was his reference to the ideal gas law<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> <span class="math inline">\(PV = kNT\)</span> that approximation of the behavior of many gases where <span class="math inline">\(P\)</span> is the absolute pressure of a gas, <span class="math inline">\(V\)</span> is the volume it occupies, <span class="math inline">\(N\)</span> is the number of atoms and molecules in the gas, and <span class="math inline">\(T\)</span> is its absolute temperature. The constant <span class="math inline">\(k\)</span> is called the Boltzmann constant and has the value <span class="math inline">\(k = 1.38 × 10−23 J/K\)</span>.</p>
+<p>You cannot manipulate <span class="math inline">\(P\)</span> directly, but there is a causal implication of changes in <span class="math inline">\(P\)</span>. That is, in order to induce changes in pressure <span class="math inline">\(P\)</span>, there always has to be changes in <span class="math inline">\(V\)</span>, <span class="math inline">\(N\)</span> and/or <span class="math inline">\(T\)</span>. However, we would think in terms of the effect of <span class="math inline">\(P\)</span> rather than <span class="math inline">\(V\)</span> etc. For example, we would generally think in terms of how a specific tyre pressure would influence the likelihood of a puncture on an unsealed road or the quality of the ride. We would not think in terms of the effect of air volume in our tyres.</p>
+<p>Pearl caveats the hard versus soft science perspectives, and stresses the need to avoid locking ourselves into pigeon holes.</p>
 </section>
 <section id="what-did-they-conclude" class="level2">
 <h2 class="anchored" data-anchor-id="what-did-they-conclude">What did they conclude?</h2>
-<p>Primarily that applied science requires both scientific and clinical knowledge to communicate knowledge. His position is that both the effect of interventions and the health consequences of obesity are both important and both meaningful and are legitimate targets of scientific pursuit.</p>
+<p>Primarily that applied science requires both scientific and clinical perspectives to communicate knowledge. His position is that both the effect of interventions and the health consequences of obesity are important and meaningful and are legitimate targets of scientific inference.</p>
 </section>
 <section id="what-was-unclear" class="level2">
 <h2 class="anchored" data-anchor-id="what-was-unclear">What was unclear?</h2>
-<p>Pearl’s writing can be technical, nuanced and philosophically dense. This paper is no exception and therefore I may have missed some important points or subtleties in this summary. For example, what Pearl means by <em>causal character</em> is unclear to me.</p>
+<p>Pearl’s writing can be technical, nuanced and philosophically dense. This paper is no exception and therefore I may have missed some important points or subtleties in this summary. For example, what Pearl meant by <em>causal character</em> is unclear to me.</p>
 <p>Some of the critique on consistency as an assumption versus consistency as a theorem was unclear due to my own ignorance with alternative causal inference, specifically Pearl’s approach.</p>
 <p>Pearls argument rests primarily on the validity of his conceptualisation of causal inference, which is founded on a large body of work drawing from philosophy, science, mathematics and statistics. I am not sure that it provides a clear way forward and the applied researcher is left to choose which approach to adopt with limited guidance. While providing such guidance wasn’t the point of the paper, it feels like it raises more questions than it resolves.</p>
 
@@ -294,8 +295,9 @@ window.Quarto = {
 <ol>
 <li id="fn1"><p>A statement that can be proved mathematically.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>This seems odd given that obesity does have a definition that is based purely on BMI and that is used routinely by clinicians.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Admittedly I did not understand where Pearl was going with this. However, in <a href="https://doi.org/10.1097/ede.0b013e3181f5d3fd">On the consistency rule in causal inference: axiom, definition, assumption, or theorem?</a> Pearl expands on this point.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>I have updated the symbols to align with what are more commonly used in Physics text books.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>A thing logically preceeding another.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Admittedly I did not understand where Pearl was going with this. However, in <a href="https://doi.org/10.1097/ede.0b013e3181f5d3fd">On the consistency rule in causal inference: axiom, definition, assumption, or theorem?</a> Pearl expands on this point.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>I have updated the symbols to align with what are more commonly used in Physics text books.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
