@@ -13,4 +13,4 @@ Brady also has a [website](https://www.bradyneal.com/causal-inference-course){ta
 
 
 + [Paper 1: Does obesity shorten life? The importance of well-defined interventions to answer causal questions (Hernán & Taubman, 2008)](reading-group-paper-01.qmd)
-+ [Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes? (Pearl, 2018)](reading-group-paper-01.qmd)
++ [Paper 2: Does Obesity Shorten Life? Or is it the Soda? On Non-manipulable Causes? (Pearl, 2018)](reading-group-paper-02.qmd)
